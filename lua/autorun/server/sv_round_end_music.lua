@@ -22,36 +22,36 @@ local function getITO(i)
 end
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------Konsolen-Übersicht------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------Console-Overview--------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-innoCount = 0																																								   					----
-innoActivatedCount = 0																																											----
-traCount = 0																																													----
-traActivatedCount = 0 																																											----
-tOutCount = 0																																													----
-tOutActivatedCount = 0 																																											----
-for k,v in pairs(innoWinSongs) do innoCount = innoCount + 1 if(getI(k) == 1) then innoActivatedCount = innoActivatedCount + 1 end end															----
-for k,v in pairs(traitorWinSongs) do traCount = traCount + 1 if(getIT(k) == 1) then traActivatedCount = traActivatedCount + 1 end end															----
-for k,v in pairs(timeoutSongs) do tOutCount = tOutCount + 1 if(getITO(k) == 1) then tOutActivatedCount = tOutActivatedCount + 1 end end															----
-for k=1,innoCount,1 do activateInnoSongs[k] = getI(k) end																																		----
-for k=1,traCount,1 do activateTraSongs[k] = getIT(k) end																																		----
-for k=1,tOutCount,1 do activateTOutSongs[k] = getITO(k) end																																		----
-print("///////////////////////////////////////////")																																			----
-print("//	    Round Ending Songs	   	 //")																																					----
-print("///////////////////////////////////////////")																																			----
-print("// Number of Innocent Songs:",innoCount," //")																																			----
-print("// Activated Innocent Songs:",innoActivatedCount," //")																																	----
-for i, v in pairs(activateInnoSongs) do if(activateInnoSongs[i]) == 1 then print("// IS",i,"enabled 		 //") else print("// IS",i,"disabled  		 //") end end							----
-print("///////////////////////////////////////////")																																			----
-print("// Number of Traitor Songs:",traCount," //")																																				----
-print("// Activated Traitor Songs:",traActivatedCount," //")																																	----
-for i, v in pairs(activateTraSongs) do if(activateTraSongs[i]) == 1 then print("// TS",i,"enabled 		 //") else print("// TS",i,"disabled  		 //") end end								----
-print("///////////////////////////////////////////")																																			----
-print("// Number of Timeout Songs:",tOutCount," //")																																			----
-print("// Activated Timeout Songs:",tOutActivatedCount," //")																																	----
-for i, v in pairs(activateTOutSongs) do if(activateTOutSongs[i]) == 1 then print("// TOS",i,"enabled 		 //") else print("// TOS",i,"disabled  		 //") end end							----
-print("///////////////////////////////////////////")																																			----
-print("///////////////////////////////////////////")																																			----
+innoCount = 0																							----
+innoActivatedCount = 0																						----
+traCount = 0																							----
+traActivatedCount = 0 																						----
+tOutCount = 0																							----
+tOutActivatedCount = 0 																						----
+for k,v in pairs(innoWinSongs) do innoCount = innoCount + 1 if(getI(k) == 1) then innoActivatedCount = innoActivatedCount + 1 end end								----
+for k,v in pairs(traitorWinSongs) do traCount = traCount + 1 if(getIT(k) == 1) then traActivatedCount = traActivatedCount + 1 end end								----
+for k,v in pairs(timeoutSongs) do tOutCount = tOutCount + 1 if(getITO(k) == 1) then tOutActivatedCount = tOutActivatedCount + 1 end end								----
+for k=1,innoCount,1 do activateInnoSongs[k] = getI(k) end																	----
+for k=1,traCount,1 do activateTraSongs[k] = getIT(k) end																	----
+for k=1,tOutCount,1 do activateTOutSongs[k] = getITO(k) end																	----
+print("///////////////////////////////////////////")																		----
+print("//	    Round Ending Songs	   	 //")																		----
+print("///////////////////////////////////////////")																		----
+print("// Number of Innocent Songs:",innoCount," //")																		----
+print("// Activated Innocent Songs:",innoActivatedCount," //")																	----
+for i, v in pairs(activateInnoSongs) do if(activateInnoSongs[i]) == 1 then print("// IS",i,"enabled 		 //") else print("// IS",i,"disabled  		 //") end end			----
+print("///////////////////////////////////////////")																		----
+print("// Number of Traitor Songs:",traCount," //")																		----
+print("// Activated Traitor Songs:",traActivatedCount," //")																	----
+for i, v in pairs(activateTraSongs) do if(activateTraSongs[i]) == 1 then print("// TS",i,"enabled 		 //") else print("// TS",i,"disabled  		 //") end end			----
+print("///////////////////////////////////////////")																		----
+print("// Number of Timeout Songs:",tOutCount," //")																		----
+print("// Activated Timeout Songs:",tOutActivatedCount," //")																	----
+for i, v in pairs(activateTOutSongs) do if(activateTOutSongs[i]) == 1 then print("// TOS",i,"enabled 		 //") else print("// TOS",i,"disabled  		 //") end end			----
+print("///////////////////////////////////////////")																		----
+print("///////////////////////////////////////////")																		----
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
